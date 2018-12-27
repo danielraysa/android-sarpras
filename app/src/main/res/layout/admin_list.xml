@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/cardview"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:clickable="true" >
+    <!-- -->
+    <ImageView
+        android:id="@+id/daftar_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/daftar_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="10sp"
+        android:layout_toLeftOf="@+id/daftar_icon"
+        android:text="Daftar Judul"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:layout_toStartOf="@+id/daftar_icon"
+        android:layout_marginStart="12sp" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/daftar_judul"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Artist"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginStart="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:titleTextStyle">@color/titleBar</item>
+        <item name="android:actionBarTabTextStyle">@style/WindowTitleBackground</item>
+    </style>
+    <style name="Login" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/titleBar</item>
+    </style>
+</resources>

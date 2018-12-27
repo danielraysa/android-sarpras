@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SQLAndroidSettings">
+    <option name="databases">
+      <map>
+        <entry key="dat_C:\AndroidStudioProjects\Sarpras\AndroidSqlEditorDatabases\">
+          <value>
+            <list>
+              <option value="872b9ae07ce5" />
+              <option value="db_sarpras" />
+              <option value="dat" />
+              <option value="dat" />
+              <option value="false" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="packageNameByDirectory">
+      <map>
+        <entry key="C:\AndroidStudioProjects\Sarpras\AndroidSqlEditorDatabases\" value="com.drp.sarpras" />
+      </map>
+    </option>
+  </component>
+</project>

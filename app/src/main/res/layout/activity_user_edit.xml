@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Master.UserEditActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        style="@style/Widget.AppCompat.ActionBar.Solid"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Data User"
+            android:textColor="#000"
+            android:layout_marginStart="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_nama_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:layout_marginBottom="10dp"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:inputType="text" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPassword" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Telepon"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_no_telp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role User"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spinner_role_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/list_spinner">
+
+            </Spinner>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_edit_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#efd775"
+                    android:text="Ubah"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/icon_button_edit" />
+
+                <Button
+                    android:id="@+id/btn_hapus_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Hapus"
+                    android:backgroundTint="#e7545c"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/icon_button_delete" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

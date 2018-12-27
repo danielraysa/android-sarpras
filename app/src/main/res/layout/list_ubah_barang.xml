@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ubah_barang_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cari Barang..."
+        android:background="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+    <ListView
+        android:id="@+id/list_ubah_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+</LinearLayout>

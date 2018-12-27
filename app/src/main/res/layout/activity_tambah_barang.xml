@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Master.TambahBarangActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        style="@style/Widget.AppCompat.ActionBar.Solid"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Barang"
+            android:textColor="#000"
+            android:layout_marginStart="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Barang"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_barang_kode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:layout_marginBottom="10dp"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_barang_nama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:inputType="text" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Jenis Barang"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_barang_jenis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_simpan_barang"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_button_save"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

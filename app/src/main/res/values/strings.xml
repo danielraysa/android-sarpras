@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sarpras</string>
+    <string-array name="list_spinner">
+        <item value="Administrator">Administrator</item>
+        <item value="Operator">Operator</item>
+    </string-array>
+</resources>

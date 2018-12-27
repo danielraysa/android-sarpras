@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.drp.sarpras">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:description="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OperatorActivity" />
+        <activity android:name=".Master.DataUserActivity" />
+        <activity android:name=".Master.TambahUserActivity" />
+        <activity android:name=".Master.DataBarangActivity" />
+        <activity android:name=".Master.DataSiswaActivity" />
+        <activity android:name=".Master.BarangEditActivity" />
+        <activity android:name=".Master.TambahBarangActivity" />
+        <activity android:name=".Master.TambahSiswaActivity" />
+        <activity android:name=".Master.UserEditActivity" />
+        <activity android:name=".Master.SiswaEditActivity" />
+        <activity android:name=".Transaksi.Peminjaman" />
+        <activity android:name=".Transaksi.Pengembalian" />
+        <activity android:name=".Transaksi.PengembalianDetail" />
+        <activity android:name=".Transaksi.SelectDataBarang" />
+        <activity android:name=".Transaksi.SelectDataSiswa"></activity>
+    </application>
+
+</manifest>

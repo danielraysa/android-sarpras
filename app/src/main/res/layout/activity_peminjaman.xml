@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Transaksi.Peminjaman">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        style="@style/Widget.AppCompat.ActionBar.Solid"
+        android:padding="5dp">
+        <ImageView
+            style="@style/Widget.AppCompat.ButtonBar"
+            android:padding="1dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/book"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peminjaman"
+            android:textColor="#000"
+            android:textSize="10pt"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Kode Peminjaman"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_peminjaman_kode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColorHint="@color/colorAccent"
+                android:background="@color/colorPrimary"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:inputType="text" /> -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Nomor Induk Siswa"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/txt_frm_nis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="text" />
+                <Button
+                    android:id="@+id/frm_btn_siswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:background="#c5e9b9"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cari"
+                    android:drawableLeft="@drawable/icon_button_search"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Tanggal Kembali"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txt_frm_peminjaman_tanggal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColorHint="@color/colorAccent"
+                android:background="@color/colorPrimary"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:focusable="false"
+                android:inputType="date" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_transaksi_tambah_barang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#c5e9b9"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/icon_button_add"
+                    android:text="Tambah"/>
+                <Button
+                    android:id="@+id/btn_transaksi_simpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Simpan"
+                    android:backgroundTint="#c5e9b9"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/icon_button_save"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal|vertical"
+                android:scrollbarStyle="outsideInset"
+                android:fillViewport="true">
+                <!--
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/list_view_daftar_barang">
+
+                </ListView>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal|vertical"> -->
+                <TableLayout
+                    android:id="@+id/tbl_det_barang"
+                    android:stretchColumns="*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="No."
+                            />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:text="Kode Barang"
+                            />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:text="Nama Barang"
+
+                            />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorPrimaryDark"/>
+                </TableLayout>
+
+            </ScrollView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimaryDark"/>
+
+
+            <Button
+                android:id="@+id/btn_cetak"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Cetak"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    <!-- </ScrollView> -->
+</LinearLayout>
